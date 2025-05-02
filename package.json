@@ -16,14 +16,13 @@
     "turbo": "^2.5.2",
     "typescript": "5.8.2"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.7.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=22.0.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "eslint --cache --max-warnings=0"
-    ],
+    "apps/*/src/**/*.{ts,tsx}": ["eslint --cache --max-warnings=0"],
+    "packages/*/src/**/*.{ts,tsx}": ["eslint --cache --max-warnings=0"],
     "*.{ts,tsx,css,md}": "prettier --write"
   }
 }
